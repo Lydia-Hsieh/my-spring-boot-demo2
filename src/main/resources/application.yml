@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: my-spring-boot-demo2
+
+  ## DB connection
+  datasource:
+#    url: jdbc:mysql://localhost:3306/db2?useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: DODO123
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    db1:
+      name: db1
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/db1?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: DODO123
+    db2:
+      name: db2
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/db2?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: DODO123
+  jpa:
+    show-sql: true
